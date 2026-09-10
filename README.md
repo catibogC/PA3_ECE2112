@@ -30,10 +30,14 @@ The module states that we should create a new DataFrame containing rows 6 throug
     cars_6_to_10 = cars.iloc[[0,5,6,7,8,9]]
     cars_6_to_10
 
-From the newly created DataFrame, the module then specifies to only include columns "Model", "mpg", "cyl", "hp", and "gear" (which are the names of the columns found in the list). In doing so, .loc was used to call out the names of the rows and columns. The new list is expressed as "coloumn_selection".
+From the newly created DataFrame, the module then specifies to only include columns "Model", "mpg", "cyl", "hp", and "gear" (which are the names of the columns found in the list). In doing so, .loc was used to call out the names of the rows and columns. The new list is expressed as "column_selection".
 
     column_selection = cars_6_to_10.loc[[0,5,6,7,8,9], ['Model', 'mpg', 'cyl', 'hp', 'gear']]
     column_selection
+
+---
+
+## B. MODEL LOOKUP
 
 
 
