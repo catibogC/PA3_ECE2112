@@ -23,3 +23,6 @@ Additionally, to call out the shape of the .csv file, make use of the following 
 
     cars.shape
 
+* from now on, I will 
+
+The module states that we should create a new DataFrame containing rows 6 through 10, including the first row. In doing so, .loc was used in order to call out the rows by their numerical indexes. The 
