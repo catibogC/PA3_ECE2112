@@ -23,6 +23,10 @@ Additionally, to call out the shape of the .csv file, make use of the following 
 
     cars.shape
 
-* from now on, I will 
+* From now on, I will refer to the .csv file as a list.
 
-The module states that we should create a new DataFrame containing rows 6 through 10, including the first row. In doing so, .loc was used in order to call out the rows by their numerical indexes. The 
+The module states that we should create a new DataFrame containing rows 6 through 10, including the first row, from the list. In doing so, .loc was used in order to call out the rows by their numerical indices. The new list is expressed as "cars_6_to_10".
+
+    cars_6_to_10 = cars.iloc[[0,5,6,7,8,9]]
+    cars_6_to_10
+
