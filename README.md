@@ -41,14 +41,43 @@ From the newly created DataFrame, the module then specifies to only include colu
 
 ## B. MODEL LOOKUP
 
+Objective: The goal of this problem was to make use of Boolean indexing in order to call out certain rows from the list.
 
+Discussion:
 
+The first thing the module instructs me to do is to display the complete row for "Toyota Corolla". Knowing that I can't just simply call out the name or the numerical index of "Toyota Corolla", I instead made it so that if the "Model" being called out was "Toyota Corolla", it would display the row containing the name of that "Model". The new list is expressed as "toyota_corolla".
 
+    toyota_corolla = cars.loc[cars['Model']=='Toyota Corolla']
+    toyota_corolla
 
+The module then instructs me to do the same process with "Pontiac Firebird", but it can only display the columns "Model", "mpg", "hp", and "wt". I made use of the previous code, but I also indicated which columns should be called. The new list is expressed as "pontiac_firebird".
 
+    pontiac_firebird = cars.loc[cars['Model']=='Pontiac Firebird', ['Model', 'mpg', 'hp', 'wt']]
+    pontiac_firebird
 
+---
 
+## C. MULTI-MODEL SUBSETTING
 
+Objective: The goal of this problem is to call out different car model names, but instead of calling them out by their row numbers, they were called out by using the actual model name.
+
+Discussion:
+
+The module instructs me to call out "Datsun 710", "Lotus Europa", and "Ferrari Dino". Knowing that I can not call them out using their row number, I first created a new list for the model names. This list is expressed as "columns".
+
+    models = ['Datsun 710', 'Lotus Europa', 'Ferrari Dino']
+
+I then made use of .loc to call out the model names through Boolean indexing. To call out the models list, I made use of .isin.
+
+Additionally, the module also instructs me to only include the columns ""Model", "mpg", "cyl", "hp", and "gear". The new list is expressed as "Selected_cars".
+
+    models = ['Datsun 710', 'Lotus Europa', 'Ferrari Dino']
+    selected_cars = cars.loc[cars['Model'].isin(models), ['Model', 'mpg', 'cyl', 'hp', 'gear']]
+    selected_cars
+
+Since the module also asks for the shape of the list, make use of the following code.
+
+    selected_cars.shape
 
 
 
