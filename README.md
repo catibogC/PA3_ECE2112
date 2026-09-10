@@ -9,6 +9,8 @@ The .csv file is expressed as "cars".
 
     cars = pd.read_csv('cars.csv')
 
+---
+
 ## A. POSITIONAL AND LABEL BASED SLICING
 
 Objective: The goal of this problem was to display the list and shape, and to slice the imported .csv file.
